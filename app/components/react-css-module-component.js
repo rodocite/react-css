@@ -1,0 +1,16 @@
+// CSS Modules will localize the style to the component
+// The classes will be using BEM naming convention (see webpack config)
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+import CSSModules from 'react-css-modules';
+import componentStyles from './component-styles.css'
+
+class ReactCSSModule extends Component {
+  render() {
+    return (
+      <div className='global-style' styleName='gimme-a-border'>I'm a React Component extended with a CSS module to keep styles local</div>
+    )
+  }
+}
+
+export default CSSModules(ReactCSSModule, componentStyles)
