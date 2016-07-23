@@ -24,6 +24,6 @@ module.exports = {
     ]
   },
   plugins: [
-      new ExtractTextPlugin('./app/assets/stylesheets/webpack-styles.css')
+      new ExtractTextPlugin('./app/assets/stylesheets/haml-styles.css')
   ]
 }

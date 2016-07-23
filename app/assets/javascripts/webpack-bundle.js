@@ -19713,9 +19713,9 @@
 
 	var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
 
-	var _application = __webpack_require__(301);
+	var _sharedStyles = __webpack_require__(301);
 
-	var _application2 = _interopRequireDefault(_application);
+	var _sharedStyles2 = _interopRequireDefault(_sharedStyles);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19739,7 +19739,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { styleName: 'react-style' },
+	        { styleName: 'i-am-global' },
 	        'Hello, React!'
 	      );
 	    }
@@ -19748,7 +19748,7 @@
 	  return App;
 	}(_react.Component);
 
-	exports.default = (0, _reactCssModules2.default)(App, _application2.default);
+	exports.default = (0, _reactCssModules2.default)(App, _sharedStyles2.default);
 
 /***/ },
 /* 160 */
@@ -24940,8 +24940,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!./application.css", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!./application.css");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!./shared-styles.css", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!./shared-styles.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -24959,12 +24959,11 @@
 
 
 	// module
-	exports.push([module.id, "/*\n * This is a manifest file that'll be compiled into application.css, which will include all the files\n * listed below.\n *\n * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,\n * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.\n *\n * You're free to add application-wide styles to this file and they'll appear at the bottom of the\n * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS\n * files in this directory. Styles in this file should be added after the last require_* statement.\n * It is generally better to create a new file per style scope.\n *\n *= require_tree .\n *= require_self\n */\n.app-assets-stylesheets-___application__i-am-global___1xaiO {\n  color: blue;\n}\n\n.app-assets-stylesheets-___application__react-style___zqPGB {\n  color: green;\n}\n", ""]);
+	exports.push([module.id, ".app-assets-stylesheets-___shared-styles__i-am-global___2xAQk {\n  color: green;\n}\n", ""]);
 
 	// exports
 	exports.locals = {
-		"i-am-global": "app-assets-stylesheets-___application__i-am-global___1xaiO",
-		"react-style": "app-assets-stylesheets-___application__react-style___zqPGB"
+		"i-am-global": "app-assets-stylesheets-___shared-styles__i-am-global___2xAQk"
 	};
 
 /***/ },

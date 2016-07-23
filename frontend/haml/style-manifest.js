@@ -1,1 +1,1 @@
-import welcomeHAMLStyles from '../../app/assets/stylesheets/application.css'
+import welcomeHAMLStyles from './welcome.css'
