@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" type="text/css" href="html-styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="global-styles.css">
 </head>
 <body>
   <div id="react-entry"></div>
+
+  <!-- Having a regular div tag here with a class name is really no different from erb or haml -->
+  <!-- Would just need to place global-styles.css into the asset pipeline -->
+  <div class="app-just-css-__regular-html__regular-style">Hello, I'm a regular DIV tag with a class.</div>
   <script src="http://localhost:3000/bundle.js"></script>
 </body>
 </html>
