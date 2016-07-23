@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server -d --hot --progress --colors --display-modules --port 3000",
-    "build": "webpack"
+    "clean": "rm ./app/assets/stylesheets/delete-me.js",
+    "build": "webpack --config webpack.haml.config.js && webpack --config webpack.react.config.js && npm run clean"
   },
   "repository": {
-    "type": "git",
-    "url": "git@github.com:grillery/orlando.git"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
@@ -29,7 +28,9 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-2": "^6.5.0",
     "babel-register": "^6.6.0",
+    "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "postcss-loader": "^0.9.1",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   }
